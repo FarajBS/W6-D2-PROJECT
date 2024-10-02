@@ -40,7 +40,6 @@ export default function ShowPhones() {
     const submit = () => {
         if (mess.trim() != "") {
             setAllMess([{ user: userOne, messa: mess }, ...allMess]);
-
             setMess1("");
         }
     };
@@ -55,15 +54,12 @@ export default function ShowPhones() {
     const putUsers = () => {
         if (userOne.trim() != "" && userTwo.trim() != "") {
             if (userOne == userTwo) {
-                "1. " + userOne;
-                "2. " + userTwo; 
-            } 
-
-            document.getElementById("contUders").style.display = "none";
+                alert("First name must be different from last name.")
+            } else {
+                document.getElementById("contUders").style.display = "none";
+            }
         }
     };
-    console.log(userOne)
-    console.log(userTwo)
 
     return (
             <>

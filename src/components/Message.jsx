@@ -24,7 +24,7 @@ export default function Message(props) {
                 
                 <div className="chat-bubble font-semibold text-white text-xl" style={{"color": "whait", "backgroundColor": props.bg, "alignSelf": props.display }}>
                     <div>
-                    <textarea className="p-3 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 break-words resize-none text-xl" style={{"color": "whait", "backgroundColor": props.bg}} rows={1}>{props.messag}</textarea>
+                    <textarea className="p-3 rounded-xl w-full focus:outline-none focus:ring-2 focus:ring-gray-500 break-words resize-none text-xl" style={{"color": "whait", "backgroundColor": props.bg}} value={props.messag} rows={1}>{props.messag}</textarea>
 
                     </div>
 
